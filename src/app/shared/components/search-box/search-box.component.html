@@ -1,6 +1,7 @@
 <input
   type="text"
   placeholder="Search by {{placeholder}}"
-  (keyup.enter)="onSearchValue()"
+  (keyup)="onKeyPress(txtInput.value)"
+  [value]="searchTerm"
   #txtInput
   class="form-control">
